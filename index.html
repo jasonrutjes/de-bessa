@@ -6,18 +6,18 @@
   <title>DE BESSA Hair Extensions | Marbella</title>
   <meta name="description" content="DE BESSA Hair Extensions in Marbella: luxe haarverlenging, volume en kleurbehandelingen op topniveau. Boek jouw afspraak vandaag.">
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    /* ================================
-       DE BESSA – Premium Salon Look
-       Inspired by thenestsalon.ae style
-       ================================ */
+    /* ==================================
+       DE BESSA – COMPLETE HTML + CSS
+       Donkere header / lichte content
+       ================================== */
 
     :root {
       --bg-main: #f6f1ed;
       --bg-soft: #ffffff;
+      --dark: #050509;
       --primary: #1c1c1c;
       --accent: #c2a47c;
       --muted: #7a7a7a;
@@ -39,17 +39,8 @@
       line-height: 1.7;
     }
 
-    /* GLOBAL */
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
 
     .container {
       width: 100%;
@@ -61,11 +52,11 @@
     /* ================= HEADER ================= */
 
     header {
-      background: var(--bg-soft);
-      border-bottom: 1px solid var(--border);
+      background: var(--dark);
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 50;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
     .nav {
@@ -76,7 +67,6 @@
 
     .nav-logo {
       height: 100px;
-      width: auto;
     }
 
     .nav-links {
@@ -90,24 +80,24 @@
       font-size: 0.9rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--primary);
+      color: #ffffff;
     }
 
     .btn {
       background: transparent;
-      border: 1px solid var(--accent);
+      border: 1px solid rgba(255,255,255,0.4);
       padding: 0.6rem 1.6rem;
       border-radius: 30px;
       font-size: 0.85rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--primary);
+      color: #ffffff;
       transition: all 0.3s ease;
     }
 
     .btn:hover {
-      background: var(--accent);
-      color: #fff;
+      background: #ffffff;
+      color: var(--dark);
     }
 
     /* ================= SECTIONS ================= */
@@ -118,10 +108,6 @@
     }
 
     /* HERO */
-
-    .hero {
-      background: var(--bg-main);
-    }
 
     .hero-grid {
       display: grid;
@@ -152,8 +138,6 @@
       justify-content: center;
     }
 
-    /* ================= TYPOGRAPHY ================= */
-
     h1, h2, h3 {
       font-weight: 300;
       letter-spacing: 0.06em;
@@ -169,28 +153,6 @@
       max-width: 700px;
     }
 
-    /* ================= CARDS ================= */
-
-    .about-card,
-    .service-card,
-    .pricing-list,
-    .contact-card {
-      background: var(--bg-soft);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2rem;
-    }
-
-    /* ================= GALLERY ================= */
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-    }
-
-    /* ================= FOOTER ================= */
-
     footer {
       background: var(--bg-soft);
       border-top: 1px solid var(--border);
@@ -200,122 +162,92 @@
       color: var(--muted);
     }
 
-    /* ================= RESPONSIVE ================= */
-
     @media (max-width: 900px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .nav-links {
-        display: none;
-      }
+      .hero-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
     }
   </style>
 </head>
 <body>
 
-  <header>
+<header>
+  <div class="container">
+    <nav class="nav">
+      <img src="logo-debessa.png" alt="DE BESSA logo" class="nav-logo">
+
+      <div class="nav-links">
+        <a href="#about">Over ons</a>
+        <a href="#services">Behandelingen</a>
+        <a href="#pricing">Prijzen</a>
+        <a href="#gallery">Resultaten</a>
+        <a href="#contact">Boek nu</a>
+        <a href="#contact" class="btn">Afspraak maken</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
     <div class="container">
-      <nav class="nav">
-        <img src="logo-debessa.png" alt="DE BESSA logo" class="nav-logo">
-
-        <div class="nav-links">
-          <a href="#about">Over ons</a>
-          <a href="#services">Behandelingen</a>
-          <a href="#pricing">Prijzen</a>
-          <a href="#gallery">Resultaten</a>
-          <a href="#contact">Boek nu</a>
-          <a href="#contact" class="btn">Afspraak maken</a>
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title">DE BESSA<br>High-end hair extensions in Marbella</h1>
+          <p class="hero-subtitle">Persoonlijke luxe hair extensions in een private studio in Marbella. Vol, natuurlijk en perfect afgewerkt.</p>
+          <br>
+          <a href="#contact" class="btn">Plan jouw consult</a>
         </div>
-      </nav>
+
+        <div class="hero-logo-large">
+          <img src="logo-debessa.png" alt="DE BESSA logo">
+        </div>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div>
-            <h1 class="hero-title">
-              DE BESSA<br>
-              High-end hair extensions in Marbella
-            </h1>
-            <p class="hero-subtitle">
-              Persoonlijke luxe hair extensions in een private studio in Marbella. Vol, natuurlijk en perfect afgewerkt.
-            </p>
-            <br>
-            <a href="#contact" class="btn">Plan jouw consult</a>
-          </div>
+  <section id="about">
+    <div class="container">
+      <h2>Over De Bessa</h2>
+      <p>De Bessa staat voor luxe en kwaliteit in hair extensions. Wij werken uitsluitend met premium haar en bieden persoonlijke behandelingen op maat.</p>
+    </div>
+  </section>
 
-          <div class="hero-logo-large">
-            <img src="logo-debessa.png" alt="DE BESSA logo">
-          </div>
-        </div>
-      </div>
-    </section>
+  <section id="services">
+    <div class="container">
+      <h2>Behandelingen</h2>
+      <p>Volume – Lengte – Colour – Maintenance. Samen kijken we naar jouw haar en gewenste resultaat.</p>
+    </div>
+  </section>
 
-    <!-- OVER ONS -->
-    <section id="about">
-      <div class="container">
-        <h2>Over De Bessa</h2>
-        <p>
-          De Bessa staat voor luxe en kwaliteit in hair extensions. Wij werken uitsluitend met premium haar en bieden
-          persoonlijke behandelingen op maat.
-        </p>
-      </div>
-    </section>
+  <section id="pricing">
+    <div class="container">
+      <h2>Prijzen</h2>
+      <p>Indicatieve prijzen, afgestemd op jouw haartype en wensen.</p>
+    </div>
+  </section>
 
-    <!-- BEHANDELINGEN -->
-    <section id="services">
-      <div class="container">
-        <h2>Behandelingen</h2>
-        <p>
-          Volume – Lengte – Colour – Maintenance.
-          Samen kijken we naar jouw haar, lifestyle en gewenste resultaat om de beste oplossing te kiezen.
-        </p>
-      </div>
-    </section>
+  <section id="gallery">
+    <div class="container">
+      <h2>Resultaten</h2>
+      <p>Voor &amp; na voorbeelden volgen binnenkort.</p>
+    </div>
+  </section>
 
-    <!-- PRIJZEN -->
-    <section id="pricing">
-      <div class="container">
-        <h2>Prijzen</h2>
-        <p>
-          Indicatieve prijzen, afgestemd op jouw haartype en wensen. Tijdens een consult bespreken we een passende offerte
-          voor jouw haar.
-        </p>
-      </div>
-    </section>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Boek jouw afspraak via WhatsApp of het formulier.</p>
+    </div>
+  </section>
+</main>
 
-    <!-- RESULTATEN -->
-    <section id="gallery">
-      <div class="container">
-        <h2>Resultaten</h2>
-        <p>
-          Voor &amp; na voorbeelden volgen binnenkort.
-        </p>
-      </div>
-    </section>
+<footer>
+  © <span id="year"></span> DE BESSA · Marbella
+</footer>
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          Boek jouw afspraak via WhatsApp of het formulier (binnenkort beschikbaar).
-        </p>
-      </div>
-    </section>
-  </main>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-  <footer>
-    © <span id="year"></span> DE BESSA · Marbella
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
