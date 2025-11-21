@@ -1,190 +1,321 @@
-/* ================================
-   DE BESSA – Premium Salon Look
-   Inspired by thenestsalon.ae style
-   ================================ */
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DE BESSA Hair Extensions | Marbella</title>
+  <meta name="description" content="DE BESSA Hair Extensions in Marbella: luxe haarverlenging, volume en kleurbehandelingen op topniveau. Boek jouw afspraak vandaag.">
 
-:root {
-  --bg-main: #f6f1ed;
-  --bg-soft: #ffffff;
-  --primary: #1c1c1c;
-  --accent: #c2a47c;
-  --muted: #7a7a7a;
-  --border: #e5ded8;
-  --max-width: 1100px;
-  --radius: 8px;
-}
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <style>
+    /* ================================
+       DE BESSA – Premium Salon Look
+       Inspired by thenestsalon.ae style
+       ================================ */
 
-body {
-  font-family: "Poppins", system-ui, sans-serif;
-  background: var(--bg-main);
-  color: var(--primary);
-  line-height: 1.7;
-}
+    :root {
+      --bg-main: #f6f1ed;
+      --bg-soft: #ffffff;
+      --primary: #1c1c1c;
+      --accent: #c2a47c;
+      --muted: #7a7a7a;
+      --border: #e5ded8;
+      --max-width: 1100px;
+      --radius: 8px;
+    }
 
-/* GLOBAL */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+    body {
+      font-family: "Poppins", system-ui, sans-serif;
+      background: var(--bg-main);
+      color: var(--primary);
+      line-height: 1.7;
+    }
 
-img {
-  max-width: 100%;
-  display: block;
-}
+    /* GLOBAL */
 
-.container {
-  width: 100%;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-/* ================= HEADER ================= */
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-header {
-  background: var(--bg-soft);
-  border-bottom: 1px solid var(--border);
-}
+    .container {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
 
-.nav {
-  display: flex;
-  align-items: center;
-  height: 90px;
-}
+    /* ================= HEADER ================= */
 
-.nav-logo {
-  height: 100px;
-}
+    header {
+      background: var(--bg-soft);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-.nav-links {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
-}
+    .nav {
+      display: flex;
+      align-items: center;
+      height: 90px;
+    }
 
-.nav-links a {
-  font-size: 0.9rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--primary);
-}
+    .nav-logo {
+      height: 100px;
+      width: auto;
+    }
 
-.btn {
-  background: transparent;
-  border: 1px solid var(--accent);
-  padding: 0.6rem 1.6rem;
-  border-radius: 30px;
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--primary);
-  transition: all 0.3s ease;
-}
+    .nav-links {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+    }
 
-.btn:hover {
-  background: var(--accent);
-  color: #fff;
-}
+    .nav-links a {
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
 
-/* ================= SECTIONS ================= */
+    .btn {
+      background: transparent;
+      border: 1px solid var(--accent);
+      padding: 0.6rem 1.6rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      transition: all 0.3s ease;
+    }
 
-section {
-  padding: 5rem 0;
-  background: var(--bg-main);
-}
+    .btn:hover {
+      background: var(--accent);
+      color: #fff;
+    }
 
-/* HERO */
+    /* ================= SECTIONS ================= */
 
-.hero {
-  background: var(--bg-main);
-}
+    section {
+      padding: 5rem 0;
+      background: var(--bg-main);
+    }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 3.5rem;
-  align-items: center;
-}
+    /* HERO */
 
-.hero-title {
-  font-size: clamp(2.4rem, 5vw, 3.2rem);
-  font-weight: 300;
-  letter-spacing: 0.04em;
-}
+    .hero {
+      background: var(--bg-main);
+    }
 
-.hero-subtitle {
-  margin-top: 1.2rem;
-  color: var(--muted);
-  font-size: 1rem;
-  max-width: 520px;
-}
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
 
-/* ================= TYPOGRAPHY ================= */
+    .hero-title {
+      font-size: clamp(2.4rem, 5vw, 3.2rem);
+      font-weight: 300;
+      letter-spacing: 0.04em;
+    }
 
-h1, h2, h3 {
-  font-weight: 300;
-  letter-spacing: 0.06em;
-}
+    .hero-subtitle {
+      margin-top: 1.2rem;
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 520px;
+    }
 
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
+    .hero-logo-large {
+      background: var(--bg-soft);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+    }
 
-/* ================= CONTENT SECTIONS ================= */
+    /* ================= TYPOGRAPHY ================= */
 
-section p {
-  color: var(--muted);
-  max-width: 700px;
-}
+    h1, h2, h3 {
+      font-weight: 300;
+      letter-spacing: 0.06em;
+    }
 
-/* ================= CARDS ================= */
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
 
-.about-card,
-.service-card,
-.pricing-list,
-.contact-card {
-  background: var(--bg-soft);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 2rem;
-}
+    section p {
+      color: var(--muted);
+      max-width: 700px;
+    }
 
-/* ================= GALLERY ================= */
+    /* ================= CARDS ================= */
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-}
+    .about-card,
+    .service-card,
+    .pricing-list,
+    .contact-card {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+    }
 
-/* ================= FOOTER ================= */
+    /* ================= GALLERY ================= */
 
-footer {
-  background: var(--bg-soft);
-  border-top: 1px solid var(--border);
-  padding: 2.5rem 0;
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
 
-/* ================= RESPONSIVE ================= */
+    /* ================= FOOTER ================= */
 
-@media (max-width: 900px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-  }
+    footer {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 0;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
 
-  .nav-links {
-    display: none;
-  }
-}
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <img src="logo-debessa.png" alt="DE BESSA logo" class="nav-logo">
+
+        <div class="nav-links">
+          <a href="#about">Over ons</a>
+          <a href="#services">Behandelingen</a>
+          <a href="#pricing">Prijzen</a>
+          <a href="#gallery">Resultaten</a>
+          <a href="#contact">Boek nu</a>
+          <a href="#contact" class="btn">Afspraak maken</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <h1 class="hero-title">
+              DE BESSA<br>
+              High-end hair extensions in Marbella
+            </h1>
+            <p class="hero-subtitle">
+              Persoonlijke luxe hair extensions in een private studio in Marbella. Vol, natuurlijk en perfect afgewerkt.
+            </p>
+            <br>
+            <a href="#contact" class="btn">Plan jouw consult</a>
+          </div>
+
+          <div class="hero-logo-large">
+            <img src="logo-debessa.png" alt="DE BESSA logo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVER ONS -->
+    <section id="about">
+      <div class="container">
+        <h2>Over De Bessa</h2>
+        <p>
+          De Bessa staat voor luxe en kwaliteit in hair extensions. Wij werken uitsluitend met premium haar en bieden
+          persoonlijke behandelingen op maat.
+        </p>
+      </div>
+    </section>
+
+    <!-- BEHANDELINGEN -->
+    <section id="services">
+      <div class="container">
+        <h2>Behandelingen</h2>
+        <p>
+          Volume – Lengte – Colour – Maintenance.
+          Samen kijken we naar jouw haar, lifestyle en gewenste resultaat om de beste oplossing te kiezen.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRIJZEN -->
+    <section id="pricing">
+      <div class="container">
+        <h2>Prijzen</h2>
+        <p>
+          Indicatieve prijzen, afgestemd op jouw haartype en wensen. Tijdens een consult bespreken we een passende offerte
+          voor jouw haar.
+        </p>
+      </div>
+    </section>
+
+    <!-- RESULTATEN -->
+    <section id="gallery">
+      <div class="container">
+        <h2>Resultaten</h2>
+        <p>
+          Voor &amp; na voorbeelden volgen binnenkort.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Boek jouw afspraak via WhatsApp of het formulier (binnenkort beschikbaar).
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> DE BESSA · Marbella
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
